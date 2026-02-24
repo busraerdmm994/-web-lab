@@ -1,13 +1,160 @@
-<!doctype html>
-<html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>web-lab-hello</title>
-  </head>
-  <body>
-    <div id="root"></div>
-    <script type="module" src="/src/main.tsx"></script>
-  </body>
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kişisel Portföy</title>
+
+<link rel="stylesheet" href="/src/index.css">
+</head>
+<body>
+<a href="#main-content" class="skip-link">Ana içeriğe atla</a>
+    <header>
+        <nav aria-label="Ana navigasyon">
+            <ul>
+                <li><a href="#hakkimda">Hakkımda</a></li>
+                <li><a href="#projeler">Projeler</a></li>
+                <li><a href="#iletisim">İletişim</a></li>
+            </ul>
+        </nav>
+    </header>
+
+<main id="main-content">
+    <header>
+        <h1>Büşra Erdem - Yazılım Mühendisi Portföyü</h1>
+    </header>
+
+    <section id="hakkimda">
+        <h2>Hakkımda</h2>
+        <figure>
+            <img src="profil.jpeg" alt="Büşra Erdem'in çalışma masasında çekilmiş vesikalık fotoğrafı">
+            <figcaption>Büşra Erdem - Yazılım Mühendisi Adayı</figcaption>
+        </figure>
+        <p>Merhaba! Ben Büşra. Yapay Zeka, Doğal Dil İşleme (NLP) ve Makine Öğrenimi alanlarında kendini geliştiren, Yazılım Mühendisliği 3. sınıf
+öğrencisiyim. TEKNOFEST ve ATP-Alibaba NLP Hackathonlarında finalist olarak yer aldım. Metin sınıflandırma, duygu
+analizi ve varlık tanıma (NER) görevleri için LLM tabanlı modeller geliştirdim. Python ve modern makine öğrenimi
+kütüphaneleri kullanarak model geliştirme ve test süreçlerinde aktif rol aldım.
+Savunma Teknolojileri ve Nitelikli Mühendisler Topluluğu Yazılım Ekibinde iki yıldır görev almakta; disiplinler arası ekip
+çalışması, otonom sistem algoritmaları geliştirme ve Gazebo simülasyon ortamında test süreçleri konusunda deneyim
+sahibiyim. Öğrenmeye açık, analitik düşünebilen ve problem çözme odaklı bir mühendis adayıyım.</p>
+    </section>
+
+<section id="projeler">
+    <h2>Projelerim</h2>
+
+    <article>
+        <h3>TEKNOFEST İnsansız Deniz Aracı Yarışması 2025 - Finalist</h3>
+        <figure>
+            <img src="deniz-araci.jpg" alt="Gazebo simülasyonunda YOLO ile nesne tespiti yapan otonom deniz aracı">
+            <figcaption>Otonom Waypoint Takibi ve Engel Kaçınma Sistemi</figcaption>
+        </figure>
+        <ul>
+            <li>Gerçek zamanlı nesne tespiti ve takibi için YOLO kullanarak görüntü işleme yazılımı geliştirdim.</li>
+            <li>Otonom navigasyon ve engel tespiti algoritmalarını Gazebo ortamında test ettim.</li>
+        </ul>
+    </article>
+
+    <article>
+        <h3>ATP-Alibaba & TEKNOFEST NLP Hackathon - Finalist</h3>
+        <figure>
+            <img src="nlp-proje.jpg" alt="Transformer tabanlı NLP modelinin duygu analizi sonuçları grafiği">
+            <figcaption>LLM Fine-Tuning ile Küfür ve Varlık Tanıma (NER)</figcaption>
+        </figure>
+        <ul>
+            <li>Saldırgan dil tespiti için gelişmiş NLP modelleri ve Transformer tabanlı yapılar kullandım.</li>
+            <li>Müşteri yorumlarında Varlık Tanıma (NER) ve Duygu Analizi modellerini fine-tune ettim.</li>
+        </ul>
+    </article>
+
+    <article>
+        <h3>TEKNOFEST Hava Savunma Sistemleri Yarışması 2025</h3>
+          <figure>
+            <img src="hss.png" alt="Geliştirdiğimiz Hava Savunma Sistemi">
+            <figcaption>Otonom Waypoint Takibi ve Engel Kaçınma Sistemi</figcaption>
+        </figure>
+        <ul>
+            <li>YOLO ile Dost-Düşman tespiti ve ByteTrack ile nesne takibi algoritmaları geliştirdim.</li>
+            <li>Multidisipliner ekip ortamında veri ön işleme ve şekil tespiti veri seti oluşturma süreçlerini yönettim.</li>
+        </ul>
+    </article>
+
+    <article>
+        <h3>Elektrikli Araç Şarj İstasyonları (EVCS) Güvenlik ve Anomali Tespiti</h3>
+        <figure>
+            <img src="evcs-security.jpg" alt="Akıllı şebeke sistemleri üzerindeki siber saldırı senaryolarını gösteren ağ diyagramı">
+            <figcaption>Random Forest ile Anomali ve Saldırı Tespiti</figcaption>
+        </figure>
+        <p>
+            Bilgi Sistemleri ve Güvenliği dersi kapsamında, elektrikli araç şarj altyapısındaki koordine edilmiş talep taraflı saldırıları analiz ettim. 
+            Ekibimle hazırladığımız veri seti üzerinden <strong>Random Forest</strong> modeli eğiterek siber saldırı tespiti gerçekleştirdim.
+        </p>
+    </article>
+</section>
+
+<section id="iletisim">
+    <h2>İletişim</h2>
+    <form action="#" method="POST" novalidate>
+        <fieldset>
+            <legend>İletişim Formu</legend>
+
+            <div class="form-group">
+                <label for="name">Ad Soyad:</label>
+                <input 
+                    type="text" 
+                    id="name" 
+                    name="name" 
+                    required 
+                    minlength="2" 
+                    aria-describedby="name-error"
+                >
+                <small id="name-error" class="error-msg" role="alert"></small>
+            </div>
+
+            <div class="form-group">
+                <label for="email">E-posta:</label>
+                <input 
+                    type="email" 
+                    id="email" 
+                    name="email" 
+                    required 
+                    aria-describedby="email-error"
+                >
+                <small id="email-error" class="error-msg" role="alert"></small>
+            </div>
+
+            <div class="form-group">
+                <label for="subject">Konu:</label>
+                <select id="subject" name="subject" required aria-describedby="subject-error">
+                    <option value="">-- Seçiniz --</option>
+                    <option value="staj ve is teklifleri">Staj ve İş Teklifleri</option>
+                    <option value="soru">Soru</option>
+                    <option value="oneri">Öneri</option>
+                </select>
+                <small id="subject-error" class="error-msg" role="alert"></small>
+            </div>
+
+            <div class="form-group">
+                <label for="message">Mesajınız:</label>
+                <textarea 
+                    id="message" 
+                    name="message" 
+                    rows="5" 
+                    required 
+                    minlength="30" 
+                    aria-describedby="message-error"
+                ></textarea>
+                <small id="message-error" class="error-msg" role="alert"></small>
+            </div>
+
+            <button type="submit">Gönder</button>
+        </fieldset>
+    </form>
+</section>
+</main>
+
+    <footer>
+        <p>&copy; 2025 BusraErdem. Tüm hakları saklıdır.</p>
+    </footer>
+
+</body>
 </html>

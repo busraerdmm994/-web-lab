@@ -1,68 +1,94 @@
-:root {
-  font-family: system-ui, Avenir, Helvetica, Arial, sans-serif;
-  line-height: 1.5;
-  font-weight: 400;
-
-  color-scheme: light dark;
-  color: rgba(255, 255, 255, 0.87);
-  background-color: #242424;
-
-  font-synthesis: none;
-  text-rendering: optimizeLegibility;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-}
-
-a {
-  font-weight: 500;
-  color: #646cff;
-  text-decoration: inherit;
-}
-a:hover {
-  color: #535bf2;
-}
-
-body {
+/* 1. Genel Sıfırlama */
+* {
   margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  font-family: system-ui, -apple-system, sans-serif;
+  background-color: #ecd8f0;
+  color: #333;
+}
+
+/* 2. Body Düzenlemesi */
+body {
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 40px 20px;
+  line-height: 1.6;
+}
+
+/* 3. Navigasyonu Yatay Yap (Senin görselde dikey duruyordu) */
+nav ul {
   display: flex;
-  place-items: center;
-  min-width: 320px;
-  min-height: 100vh;
+  gap: 25px;
+  list-style: none;
+  padding: 15px 0;
+  border-bottom: 2px solid #ddd;
+  margin-bottom: 30px;
 }
 
-h1 {
-  font-size: 3.2em;
-  line-height: 1.1;
+nav a {
+  text-decoration: none;
+  font-weight: bold;
+  color: #1a365d;
 }
 
-button {
+/* 4. Profil ve Proje Kartları */
+#hakkimda img {
+  width: 180px;
+  height: 180px;
+  border-radius: 50%;
+  object-fit: cover;
+  margin: 15px 0;
+  border: 4px solid white;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+}
+
+article {
+  background: white;
+  margin-bottom: 30px;
+  padding: 25px;
+  border-radius: 12px;
+  border: 1px solid #e2e8f0;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.05);
+}
+
+article img {
+  max-width: 100%;
   border-radius: 8px;
-  border: 1px solid transparent;
-  padding: 0.6em 1.2em;
-  font-size: 1em;
-  font-weight: 500;
-  font-family: inherit;
-  background-color: #1a1a1a;
-  cursor: pointer;
-  transition: border-color 0.25s;
-}
-button:hover {
-  border-color: #646cff;
-}
-button:focus,
-button:focus-visible {
-  outline: 4px auto -webkit-focus-ring-color;
+  margin: 15px 0;
 }
 
-@media (prefers-color-scheme: light) {
-  :root {
-    color: #213547;
-    background-color: #ffffff;
-  }
-  a:hover {
-    color: #747bff;
-  }
-  button {
-    background-color: #f9f9f9;
-  }
+/* 5. Skip Link ve Focus (Erişilebilirlik) */
+.skip-link {
+  position: absolute;
+  top: -100px;
+  left: 50%;
+  transform: translateX(-50%);
+  background: #cb0ef6;
+  color: white !important;
+  padding: 12px 24px;
+  z-index: 9999;
+  text-decoration: none;
+  border-radius: 0 0 10px 10px;
+  transition: top 0.3s;
+}
+
+.skip-link:focus { top: 0; }
+
+:focus {
+  outline: 3px solid #1a365d !important;
+  outline-offset: 4px;
+}
+
+/* 6. Form Düzenlemesi */
+.form-group { margin-bottom: 20px; }
+label { display: block; font-weight: 600; margin-bottom: 5px; }
+input, textarea, select {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #cbd5e0;
+  border-radius: 8px;
 }
