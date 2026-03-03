@@ -1,0 +1,20 @@
+/* src/styles/tokens.css */
+:root {
+  /* Renk Paleti (Brand Colors) */
+  --color-primary: #202223;    /* Ana mavi tonun */
+  --color-secondary: #f4b0f7;  /* İkincil yeşil tonun */
+  --color-dark: #040404;       /* Metinler için koyu gri/siyah */
+  --color-light: #f7d8f7;      /* Arkaplanlar için açık gri */
+
+  /* Boşluk Sistemleri (Spacing) */
+  --space-sm: 8px;
+  --space-md: 16px;
+  --space-lg: 32px;
+
+  /* Akışkan Tipografi (Fluid Typography) */
+  /* clamp(min, tercih edilen, max) */
+--text-base: clamp(1rem, 0.9rem + 0.5vw, 1.125rem); /* Paragraflar için */
+  --text-xl: clamp(1.25rem, 1rem + 1vw, 1.75rem);    /* h3 için */
+  --text-2xl: clamp(1.5rem, 1.2rem + 1.5vw, 2.5rem); /* h2 için */
+  --text-3xl: clamp(2rem, 1.2rem + 3vw, 3.5rem);     /* h1 için */
+}
