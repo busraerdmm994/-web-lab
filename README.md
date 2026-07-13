@@ -21,10 +21,3 @@
  ## Calistirma
  ```bash
  npm run dev
-
-Lighthouse Testi Sonucu:
-26<img width="1146" height="1139" alt="image" src="https://github.com/user-attachments/assets/8b5c262d-c855-4c76-9264-f9aefbcc9cce" />
-
-27 ## Ekran Goruntusu
-25 
-28 
